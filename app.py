@@ -4,13 +4,13 @@ from datetime import datetime, date
 # --- Configurações da Página ---
 st.set_page_config(page_title="Agendamento Barbearia", page_icon="✂️")
 
-st.title("✂️ Barbearia do Mestre")
+st.title("✂️ Bigode Barber")
 st.subheader("Agende seu horário com facilidade")
 
 # --- Dados da Barbearia (Edite aqui) ---
-SEU_NUMERO_WHATSAPP = "5511999999999" # Coloque seu número com DDD (ex: 55 + DDD + Numero)
-HORARIOS = ["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"]
-SERVICOS = ["Corte de Cabelo", "Barba", "Cabelo + Barba (Completo)", "Pezinho/Sobrancelha"]
+SEU_NUMERO_WHATSAPP = "5571984290236" # Coloque seu número com DDD (ex: 55 + DDD + Numero)
+HORARIOS = ["00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30","09:00", "09:30", "10:00", "10:30", "11:00", "11:30","12:00", "12:30", "13:00", "13:30", "14:00", "14:30","15:00", "15:30", "16:00", "16:30", "17:00", "17:30","18:00", "18:30", "19:00", "19:30", "20:00", "20:30","21:00", "21:30", "22:00", "22:30", "23:00", "23:30"]
+SERVICOS = ["Corte de Cabelo", "Barba", "Cabelo + Barba (Completo)", "Pezinho/Sobrancelha", "Nevou", "Pigmentação", "COMBO (Corte, Nevou, Sombrancelha, Bigode, Barba"]
 
 # --- Formulário de Agendamento ---
 with st.container():
@@ -41,4 +41,5 @@ with st.container():
     if nome_cliente:
         st.link_button("✅ Agendar no WhatsApp", link_whatsapp)
     else:
+
         st.warning("Por favor, preencha seu nome para liberar o botão de agendamento.")
