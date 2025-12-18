@@ -4,7 +4,7 @@ from datetime import datetime, date
 # --- Configurações da Página ---
 st.set_page_config(page_title="Agendamento Barbearia", page_icon="✂️")
 
-st.title("✂️ Bigode Barber")
+st.title("✂️ Diigoo Barber")
 st.subheader("Agende seu horário com facilidade")
 
 # --- Dados da Barbearia (Edite aqui) ---
@@ -43,5 +43,6 @@ with st.container():
     else:
 
         st.warning("Por favor, preencha seu nome para liberar o botão de agendamento.")
+
 
 
