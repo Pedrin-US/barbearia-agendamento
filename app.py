@@ -62,7 +62,7 @@ HORARIOS_TODOS = [
 SERVICOS = ["BARBA R$15", "CABELO R$25", "BARBA+CABELO R$35", "NEVOU COMPLETO R$100", "LUZES R$80", "PEZINHO R$10", "CORTE+PIGMENTAÇÃO R$35", "CORTE COMPLETO + PIGMENTAÇÃO R$50", "SOMBRANCELHA R$8"]
 
 # --- Área do Cliente ---
-st.title("✂️ Bigode Barber")
+st.title("✂️ Diigoo Barber")
 st.subheader("Agende seu horário com facilidade")
 
 with st.container():
@@ -159,6 +159,7 @@ with st.expander("🔐 Painel do Administrador"):
                     st.rerun()
         else:
             st.info("Ainda não há agendamentos registrados.")
+
 
 
 
